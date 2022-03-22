@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+html{
+    /* porcentagem do tamanhox*/
+    font-size: 72.5%;
+}
+
+.conteudo{
+display: inline-grid;
+grid-template-columns: 1.3fr, 1fr;
+column-gap: 0px;
+height: 100vh;
+width: 100%;
+align-items: center;
+background: linear-gradient(0deg, #f77062 0%, #FA58B6 100%);
+font-display: fallback;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.primeiracoluna{
+    grid-column-start: 1;
+    background: #7A0BC0;
+    height: 70vh;
+    width: 50vw;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    color: white;
+    padding: 5.3rem;
+    margin-left: 11rem;   
+}
+
+.titulo{
+    
+    font-weight: 400;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.subtitulo{
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: #F9D371;
+    padding-bottom: 1.5rem;
+
+}
+
+.texto{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.lista{
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    text-align: justify;
+}
+
+.textofinal{ 
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+.segundacoluna{
+    grid-column-start: 2;
+    align-items: center;
+    color: #434C5E;
+    background: white;
+    height: 70vh;
+    width: 30vw;
+    margin-right: 18rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+form label, form legend{
+    display: inline;
+    margin-bottom: 1rem;
+}
+
+input{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #434C5E;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background: #ECEFF4;
+    border: none;
+}
+
+.contato{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+fieldset{
+    border: none;
+}
+
+select{
+    font-size: 1.5rem;
+    border: none;
+    color: #434C5E;
+    margin-bottom: 1.5rem;
+}
+
+option{
+    font-size: 1.5rem;
+}
+
+.botao{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 6rem;
+    width: 50%;
+    height: 3rem;
+    align-items: center;
+    border-radius: 1.5rem;
+    border:none;
+    background: linear-gradient(0deg, #f77062 0%, #FA58B6 100%);
+    font-family: 'Open Sans', sans-serif;
+    font-display: fallback;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.botao:hover{
+    background: #7A0BC0;
+    transform: scale(1.2)
+}
+
+
+@media(max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+
+@media(max-device-width: 360px){
+    .conteudo{
+        display:block;
+        text-align: center;
+        height: 135vh;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .primeiracoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 3rem;
+        margin-top: 3rem;
+    }
+
+    .segundacoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    form label, form legend{
+        text-align: left;
+    }
+    
+    .botao{
+        margin-left: 9rem;
+    }
+}
+
+@media(device-width: 375px){
+    .conteudo{
+        display:block;
+        text-align: center;
+        height: 160vh;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .primeiracoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 3rem;
+        margin-top: 3rem;
+    }
+
+    .segundacoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    form label, form legend{
+        text-align: left;
+    }
+    
+    .botao{
+        margin-left: 9rem;
+    }
+}
+
+    
+@media (device-width: 390px){
+    .conteudo{
+        display:block;
+        text-align: center;
+        height: 123vh;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .primeiracoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 3rem;
+        margin-top: 3rem;
+    }
+
+    .segundacoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    form label, form legend{
+        text-align: left;
+    }
+    
+    .botao{
+        margin-left: 9rem;
+    }
+}
+
+@media (device-width: 414px){
+    .conteudo{
+        display:block;
+        text-align: center;
+        height: 124vh;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .primeiracoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 3rem;
+        margin-top: 3rem;
+    }
+
+    .segundacoluna{
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 90vw;
+        text-align: justify;
+        border-radius: 0rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: 3rem;
+        margin-left: 1rem; 
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    form label, form legend{
+        text-align: left;
+    }
+    
+    .botao{
+        margin-left: 9rem;
+    }
+}
+ 

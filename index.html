@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="primeiracoluna">
+            <p class="titulo"><strong>Quer desapegar de algumas roupinhas?</strong></p>
+            <p class="subtitulo"><strog>A gente te ajuda!</strog></p>
+            <p class="texto"><strog>Deixa eu te contar um pouquinho sobre como funciona:</strog></p>
+            <p>
+                <ul class="lista">
+                    <li>Recebemos apenas peças em bom estado, sem defeitos e limpas</li>
+                    <li>Escolhemos as peças que fazem sentido para o brechó</li>
+                    <li>Avaliamos o valor de venda e deste valor, você fica com 50%</li>
+                    <li>As peças são postadas no Instagran e Enjoei por 60 dias</li>
+                    <li>Após 60 dias, conversamos sobre o que você deseja fazer com o que não foi vendido</li>
+                    <li>Precisamos que você leve as peças até nós e busque no final</li>
+                </ul>
+            </p>
+            <p class="textofinal"><strong>Gostou da idéia?<br> Faça seu cadastro pra gente conversar!</strong></p>
+        </div>
+    
+        <div class="segundacoluna">
+            <form action="https://formsubmit.co/kaorucamila@gmail.com " method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone" required placeholder="(xx)xxxxx-xxxx">
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            
+                <fieldset>
+                    <legend>Como conheceu a Lacami Brechó?</legend>
+                    <select class="contato" name="primeiro contato">
+                        <option>Instagran</option>
+                        <option>Azamigas</option>
+                        <option>Google</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Deseja receber nossas novidades?</legend>
+                    <select class="escolha" name="novidades">
+                        <option>Claro! Quero arrasar!</option>
+                        <option>Não, obrigada!</option>
+                    </select>
+                </fieldset> 
+                <button class="botao" type="submit">Enviar</button> 
+            </form>
+            
+        </div>    
+    </div>
+       
+</body>
+
+<html/>
